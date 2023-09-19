@@ -1,0 +1,404 @@
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Navigation Bar */
+
+#home {
+  background-color:  #0c26b4;
+  padding-bottom: 1cm;
+  margin-left:-1cm;
+  margin-right:-1cm;
+  margin-top:-1cm;
+  padding-top: 2cm;
+  padding-bottom: 2.5cm;
+  height: 5mm;
+ }
+
+.topmenu {
+  color: lightgray;
+  margin: 10px;
+  padding: 20px;
+  font-size: 20px;
+  text-decoration:none;
+}
+
+.topmenu:hover {
+  color: white;
+  font-weight: bolder;
+  text-decoration: underline;
+  /* Add the styles here */
+}
+
+.topdiv {
+  float: right;
+  padding-right: 1cm;
+}
+
+.profile_name {
+  font-weight: bolder;
+  float: left;
+  padding-left: 2cm;
+  color: white;
+  /* Add the styles here */
+}
+
+.profile_name .contact_info a {
+  font-size: 15px;
+  font-style: italic;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  color: white;
+}
+.profile_name .contact_info a:hover {
+  text-decoration: none;
+}
+
+.contact_info img {
+  width:25px;
+  margin-right: 10px;
+  float:left;
+}
+
+/* Titles */
+
+
+h2 {
+  text-align: justify;
+  font-size: 50px;
+  color: #0c26b4;
+}
+
+.heading {
+  text-align: center;
+  font-size: 50px;
+  color: #0c26b4;
+}
+
+.introduction {
+  text-align: justify;
+  font-size: 30px;
+  text-align: center;
+  float: left;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  animation-duration: 5s;
+  position: relative;
+}
+.flex_center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+hr {
+  border: 1px solid lightgray;
+  width: 75%;
+  text-align: center;
+}
+.line {
+  border: 2px solid lightgray;
+  width: 50%;
+  text-align: center;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+.subhead {
+  font-weight: bolder;
+}
+
+
+/* About the Accodions */
+
+.cont {
+  box-sizing: border-box;
+  margin: 15px;
+  padding: 0;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+label {
+  display: block;
+  padding: 10px;
+  border-bottom: 1px solid black;
+  color: white;
+  background: #0076ff;
+  z-index: 2;
+}
+
+.accordion:last-child > label, .accordion:last-child > .accordion-content {
+  border: none;
+}
+.accordion-content {
+  border-bottom: 1px solid black;
+  padding: 0;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  z-index: -1;
+  transition: 0.3s linear;
+  font-size: 25px;
+  color: rgb(128, 128, 128);
+  
+}
+
+input:checked ~ .accordion-content {
+  padding: 15px;
+  opacity: 1;
+  max-height: 500px; 
+  z-index: 1;
+}
+
+
+#main div p {
+  font-size: 25px;
+  color: rgb(128, 128, 128);
+  margin-top: -1cm;
+}
+
+
+
+
+/* Used in the About Me sections */
+
+
+
+
+
+
+
+/* Skills */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Projects */
+
+.projects-container {
+  margin-top: 30px;
+  margin-left: 60px;
+}
+
+.projects-container hr {
+  border: 1px solid lightgray;
+  width: 75%;
+  margin-left: 5cm;
+}
+
+.project-card {
+  margin: 0 15px 15px 30px;
+  padding-bottom: 5px;
+}
+
+.project-card h3 {
+  font-size: 25px;
+  margin-left: 30px;
+}
+
+.project-card li {
+  font-size: 20px;
+  margin-left: 30px;
+}
+.tel, .telme {
+ text-decoration: none; 
+ color: blue;
+}
+.tel:hover, .telme:hover {
+  color: #7600bc;
+}
+#tel {
+  list-style-type: none;
+}
+
+/* Recommendations */
+
+.all_recommendations {
+  display: flex;
+  align-items: center;
+  margin-left: 1in;
+  flex-direction: row;
+  flex-flow: wrap;
+  padding: 20px;
+}
+
+.recommendation {
+  font-style: italic;
+  text-align: left;
+  width: 20.875rem;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 11px;
+  box-shadow: 0 3px 10px var(--primary-shadow);
+  padding-right: 30px;
+  padding-left: 0;
+  margin: 10px;
+  border:1px solid gray;
+  font-size: 18px;
+  height:auto;
+}
+
+.recommendation span {
+  color: #7600bc;
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Scroll to Top Button */
+
+.iconbutton{
+  width: 48px;
+  height: 48px;
+  border-radius: 100%;
+  background-color: #0c26b4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 3%;
+  bottom: 3%;
+  cursor: pointer;
+}
+
+/* Form Pop-up */
+
+.popup {
+  width:400px;
+  background-color: #e8bcf0;
+  border-radius: 3mm;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  position: fixed;
+  /* padding: 30px; */
+  visibility: hidden;
+}
+
+.popup img {
+  padding-top: 20px;
+}
+
+.popup button {
+  background-color: #fff;
+  border: 1px solid  #0c26b4;
+  color: #0c26b4;
+  display: block;
+  border-radius: 6px;
+  text-align: center;
+  margin: 50px;
+  padding: 10px;
+  width: 2in;
+  font-size: 20px;
+  margin-left: 25%;
+}
+
+.popup button:hover {
+  background-color: #fff;
+  border: 2px solid  #0c26b4;
+  color:  #0c26b4;
+  display: block;
+  font-weight: bolder;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 25%;
+}
+
+/* Recommendation Form */
+
+input, textarea {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+  margin: 10px;  
+  width:100%;
+}
+
+fieldset {
+  display: flexbox;
+  align-content: center;
+  justify-content: center;  
+  padding: 25px; 
+  margin-left: 50px; 
+  margin-right: 50px;   
+  border: thin solid white;
+  width: 50%;
+}
+
+/* Buttons */
+
+button {
+  background-color: #fff;
+  border: 1px solid  #0c26b4;
+  color: #0c26b4;
+  display: block;
+  border-radius: 6px;
+  text-align: center;
+  margin: 50px;
+  padding: 10px;
+  width: 2in;
+  font-size: 20px;
+}
+
+button:hover {
+  background-color:  #0c26b4;
+  border: 1px solid  #0c26b4;
+  color: #fff;
+  display: block;
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.contact:hover {
+  text-decoration: none;
+}
+
+/* About Posts Page */
+
+.pagination-container {
+  text-align: center;
+}
+.pagination {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #0076ff;
+  border-radius: 5px;
+}
+.pagination li {
+  display: inline;
+}
+.pagination a {
+  color: black;
+  text-decoration: none;
+  padding: 7px 14px;
+  float: left;
+  border-right: 1px solid #0076ff;
+  transition-duration: 1s;
+}
+.pagination a:hover {
+  background: #0076ff;
+  color: white;
+}
+.pagination li:last-child > a {
+  border: none;
+}
+.active {
+  color: white;
+  background: #0076ff;
+}
